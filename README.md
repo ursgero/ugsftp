@@ -1,2 +1,2 @@
 # ugsftp
-Rust SFTP Backup client
+Rust SFTP Backup client for Databackup with Swissbackup @ Informaniak.com
