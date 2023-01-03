@@ -1,0 +1,13 @@
+
+
+// Metadata {
+//  accessed: Some(SystemTime
+//      { tv_sec: 1669709678, tv_nsec: 0 }),
+//  created: None,
+// gid: Some(0),
+// mode:
+// Some(UnixPex(UnixPexClass { read: true, write: true, execute: true },
+// UnixPexClass { read: true, write: false, execute: true },
+// UnixPexClass { read: true, write: false, execute: true })),
+// modified: Some(SystemTime { tv_sec: 1669709678, tv_nsec: 0 }),
+// size: 0, symlink: None, file_type: Directory, uid: Some(0) }
