@@ -32,3 +32,12 @@ rmhost=sftp.xyz.infomaniak.com
 kaewor=Passwort
 
 person=Benutzername
+
+
+
+
+*** Aufruf des Programmes ***
+
+im Projektordner /src mit
+
+sudo RUST_LOG=trace cargo run -v -- --user=<benutzer> -s <zielurl>.infomaniak.com -p Kennwort
