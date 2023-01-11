@@ -41,3 +41,5 @@ person=Benutzername
 im Projektordner /src mit
 
 sudo RUST_LOG=trace cargo run -v -- --user=<user> -s <destination_url> -p <passwort>
+  
+  
