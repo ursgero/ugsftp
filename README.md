@@ -32,7 +32,7 @@ sucht das Programm nach der Datei /etc/ugftp/control.txt
 Die Konfigurationsdatei liegt immer im Ordner /etc/ugftp/
 und darf nur für den root Benutzer lesbar sein.
 
-##Beispiel Parameter einer Konfigurationsdatei:##
+## Beispiel Parameter einer Konfigurationsdatei:
 
 **( Standard: /etc/ugftp/control.txt ):**
 
@@ -49,13 +49,13 @@ und darf nur für den root Benutzer lesbar sein.
 
 
 
-***Aufruf des Programmes***
+## Aufruf des Programmes
 
-wechseln sie in den Projektordner /src
+wechseln sie in den Projektordner */src*
 
 starten Sie
 
-sudo RUST_LOG=trace cargo run -v [-- [--user=<user>] [-s <destination_url>] [-p <passwort>] [-c <congfigfile>]]
+*sudo [RUST_LOG=trace] cargo run -v [-- [--user=<user>] [-s <destination_url>] [-p <passwort>] [-c <congfigfile>]]*
 
 
 
