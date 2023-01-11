@@ -5,11 +5,13 @@
 *Usage: ugsftp [OPTIONS]*
 
 *Options:*
-  *- -s, --server <SERVER>          [env: SERVER=] [default: localhost]*
-  *- -u, --user <USER>              [env: USER=root] [default: user]*
-  *- -p, --password <PASSWORD>      [env: PASSWORD=] [default: password]*
-  *- -c, --configfile <CONFIGFILE>  [env: CONFIGFILE=] [default: control.txt]*
-  *- -h, --help                     Print help information*
+  | kurz | lang | Parameter | |
+  | :--- | :----------- | :------------- | :------------------------------------------ |
+  | -s | --server | <SERVER> |         [env: SERVER=] [default: localhost]|
+  | -u | --user |<USER>      |        [env: USER=root] [default: user]|
+  | -p | --password |<PASSWORD> |     [env: PASSWORD=] [default: password]|
+  | -c | --configfile| <CONFIGFILE> |  [env: CONFIGFILE=] [default: control.txt]|
+  | -h | --help      | |              Print help information|
 
 
 *** Beschreibung ***
