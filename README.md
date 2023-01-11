@@ -1,5 +1,7 @@
 # Projekt ugsftp
 
+## Linux basiertes Rust Programm
+
 **Rust ein SFTP Backup client für ein Databackup für  Swissbackup @ Informaniak.com**
 
 *Usage: ugsftp [OPTIONS]*
@@ -14,34 +16,47 @@
   | -h | --help      | |              Print help information|
 
 
-*** Beschreibung ***
+***Beschreibung***
 
-Das Programm liest, wenn vorhanden, die vorgegebene Konfigurationsdatei.
-Der Dateiname wird dabei angegeben mit dem Parameter -c, ist keiner angegeben
+Das Programm liest, wenn vorhanden, die vorgegebene Konfigurationsdatei. Ermittelt aus dieser
+einen Quellpfad (lokales Filesystem) und Zielpfad (Remotefilesystem),
+vergleicht die jeweils in den Ordner liegenden Dateien auf Basis des Dateialters und kopiert/überträgt
+geänderte und neue Dateien mit dem sftp Protokoll auf das Remotefilesystem.
+
+Es werden dabei keine Dateien gelöscht, sollte also eine Datei auf dem lokalen System gelöscht worden sein,
+bleibt diese auf dem remote System bestehen.
+
+Der Konfigurationsdateiname wird dabei angegeben mit dem Parameter -c, ist keiner angegeben
 sucht das Programm nach der Datei /etc/ugftp/control.txt
 
 Die Konfigurationsdatei liegt immer im Ordner /etc/ugftp/
 und darf nur für den root Benutzer lesbar sein.
 
-Beispiel Parameter einer Konfigurationsdatei: ( Standard: /etc/ugftp/control.txt ):
+##Beispiel Parameter einer Konfigurationsdatei:##
 
-locdir=/backup/
+**( Standard: /etc/ugftp/control.txt ):**
 
-remdir=/remotedir/
+*locdir=/backup/*
 
-rmhost=sftp.xyz.infomaniak.com
+*remdir=/remotedir/*
 
-kaewor=Passwort
+*rmhost=sftp.xyz.infomaniak.com*
 
-person=Benutzername
+*kaewor=Passwort*
+
+*person=Benutzername*
 
 
 
 
-*** Aufruf des Programmes ***
+***Aufruf des Programmes***
 
-im Projektordner /src mit
+wechseln sie in den Projektordner /src
 
-sudo RUST_LOG=trace cargo run -v -- --user=<user> -s <destination_url> -p <passwort>
+starten Sie
 
-*** ende ***
+sudo RUST_LOG=trace cargo run -v [-- [--user=<user>] [-s <destination_url>] [-p <passwort>] [-c <congfigfile>]]
+
+
+
+***ende des Readme***
