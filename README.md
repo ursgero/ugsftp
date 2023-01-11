@@ -21,10 +21,14 @@ sucht das Programm nach der Datei /etc/ugftp/control.txt
 Die Konfigurationsdatei liegt immer im Ordner /etc/ugftp/
 und darf nur für den root (0x600) Benutzer lesbar sein.
 
-Beispiel einer Konfigurationsdatei: ( Standard: /etc/ugftp/control.txt ):
+Beispiel Parameter einer Konfigurationsdatei: ( Standard: /etc/ugftp/control.txt ):
 
 locdir=/backup/
+
 remdir=/remotedir/
+
 rmhost=sftp.xyz.infomaniak.com
+
 kaewor=Passwort
+
 person=Benutzername
